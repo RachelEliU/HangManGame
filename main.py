@@ -11,13 +11,10 @@ Original file is located at
 #secret word the player has to guess the word before the man gets "hung" 
 def main():
   print("Welcome to the game the HandMan \n Please enter ")
-  #print("Please enter the file path ")
- # filePath=input()
-  print("Please enter the number index of the secret word ")
-  index=input()
-  #num,secretWord=choose_word(filePath,index)
+  print("Please enter the file path ")
+  filePath=input()
+  num,secretWord=choose_word(filePath,index)
   oldLetters=[] #list of all the letters that have been used
-  secretWord=index #added
   tree=""
   flage=True #a flage to check that the player still hasnt found the word 
   numberOfFailer=0
